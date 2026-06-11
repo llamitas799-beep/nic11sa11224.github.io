@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Images</title>
+
+  <style>
+    .pinguinos {
+      width: 450px;
+      border-radius: 50%;
+      border: 1px solid black;
+      filter: sepia(25%) brightness(110%) contrast(90%);
+      object-fit: cover;
+    }
+
+    .marco {
+      width: 640px;
+      height: 341px;
+      position: relative;
+      border: 60px solid transparent; 
+      border-image: url("tic-tac-toe.png") 60 repeat; 
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      box-sizing: border-box;
+    }
+
+ .campo {
+      width: 70%;  
+      height: auto;
+      filter: grayscale(100%); 
+      display: block;
+    }
+
+    .dino {
+      width: 300px;
+      filter: hue-rotate(100deg) saturate(2) brightness(1.1); 
+    }
+
+    .contenedor {
+      display: inline-block;
+      padding: 20px;
+      border-radius: 20px;
+      background: linear-gradient(135deg, #1e90ff, #ffffff);
+      box-shadow: 0 0 15px rgba(255, 255, 255, 0.8);
+    }
+
+    .contenedor img {
+      width: 300px;
+      border-radius: 15px;
+    }
+
+    .contenedor1 {
+      display: inline-block;
+      overflow: hidden;
+      box-shadow: 0 0 20px rgba(255,255,255,0.8);
+    }
+
+    .contenedor1 img {
+      width: 350px;
+      display: block;
+      filter: invert(1);
+      border-radius: 30px 0px 30px 0px;
+    }
+
+    .contenedor2 {
+      position: relative;
+      display: inline-block;
+      border-radius: 25px;
+      overflow: hidden;
+      box-shadow: 0 0 25px rgba(255,255,255,0.9);
+    }
+
+    .contenedor2 img {
+      width: 600px;
+      display: block;
+      filter: blur(3px);
+    }
+
+    .texto {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: white;
+      font-size: 48px;
+      font-weight: bold;
+      text-shadow: 0 0 20px rgba(255,255,255,0.9);
+    }
+  </style>
+</head>
+<body>
+
+  <img src="penguins.jpg" class="pinguinos">
+
+  <div class="marco">
+    <img src="football_field.jpg" class="campo">
+  </div>
+
+  <img src="dinosaur.png" alt="Dinosaurio verde" class="dino">
+
+  <div class="contenedor">
+    <img src="seagull.png" alt="Gaviota en vuelo">
+  </div>
+
+  <div class="contenedor1">
+    <img src="butterfly.jpg" alt="Mariposa en flores">
+  </div>
+
+  <div class="contenedor2">
+    <img src="theater_stage.jpg" alt="Escenario teatro">
+    <div class="texto">Presenting</div>
+  </div>
+
+</body>
+</html>
+
