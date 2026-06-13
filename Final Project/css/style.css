@@ -1,0 +1,123 @@
+body{
+font-family: Arial, sans-serif;
+margin: 0;
+background-color: #f4f4f4;
+}
+
+nav{
+display: flex;
+justify-content: center;
+gap: 15px;
+background-color: #333;
+padding: 15px;
+}
+
+nav a{
+color: white;
+text-decoration: none;
+}
+
+section{
+padding: 20px;
+}
+
+img{
+max-width: 100%;
+display: block;
+margin: auto;
+}
+
+.simple-list{
+background-color: white;
+padding: 20px;
+}
+
+.nested-list{
+background-color: white;
+padding: 20px;
+}
+
+table{
+width: 90%;
+margin: auto;
+border-collapse: collapse;
+}
+
+th,
+td{
+border: 1px solid black;
+padding: 10px;
+}
+
+form{
+display: flex;
+flex-direction: column;
+width: 300px;
+margin: auto;
+gap: 10px;
+}
+
+footer{
+text-align: center;
+padding: 20px;
+}
+
+/* flexbox section */
+
+.grid-layout{
+display: grid;
+grid-template-columns: 1fr 1fr;
+gap: 20px;
+}
+
+/* animation */
+
+h1{
+animation: fadeDown 1.5s;
+}
+
+@keyframes fadeDown{
+
+from{
+opacity: 0;
+transform: translateY(-30px);
+}
+
+to{
+opacity: 1;
+transform: translateY(0);
+}
+
+}
+
+/* grid layout */
+
+.grid-container{
+display: grid;
+grid-template-columns: 1fr 1fr;
+gap: 20px;
+padding: 20px;
+}
+
+.grid-item{
+background-color: white;
+padding: 20px;
+border: 1px solid lightgray;
+border-radius: 5px;
+}
+
+figure{
+animation: fadeIn 2s;
+}
+
+@keyframes fadeIn{
+
+from{
+opacity: 0;
+}
+
+to{
+opacity: 1;
+}
+
+}
